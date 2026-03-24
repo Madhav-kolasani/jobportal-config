@@ -89,5 +89,13 @@ springdoc:
     tryItOutEnabled: true
     persistAuthorization: true
 
+management:
+  tracing:
+    sampling:
+      probability: 0.1
+    export:
+      zipkin:
+        endpoint: ${ZIPKIN_URL:http://localhost:9411/api/v2/spans}
+
 jwt:
   secret: ${JWT_SECRET:VGhpc0lzQVNlY3VyZUJhc2U2NEVuY29kZWRTZWNyZXRLZXlGb3JKb2JQb3J0YWwyMDI2IQ==}
