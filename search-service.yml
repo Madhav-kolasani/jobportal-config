@@ -8,6 +8,12 @@ spring:
     password: ${MYSQL_PASSWORD:MySQL@123}
     driver-class-name: com.mysql.cj.jdbc.Driver
 
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+    show-sql: false
+
 springdoc:
   swagger-ui:
     enabled: false
