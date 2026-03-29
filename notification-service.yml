@@ -8,8 +8,20 @@ spring:
     password: ${MYSQL_PASSWORD:MySQL@123}
     driver-class-name: com.mysql.cj.jdbc.Driver
 
-jwt:
-  secret: ${JWT_SECRET:VGhpc0lzQVNlY3VyZUJhc2U2NEVuY29kZWRTZWNyZXRLZXlGb3JKb2JQb3J0YWwyMDI2IQ==}
+  mail:
+    host: ${MAIL_HOST:smtp.gmail.com}
+    port: ${MAIL_PORT:587}
+    username: ${MAIL_USERNAME:yagnamadhavkolasani2004@gmail.com}
+    password: ${MAIL_PASSWORD:}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+mail:
+  from: ${MAIL_FROM:yagnamadhavkolasani2004@gmail.com}
 
 app:
   internal:
