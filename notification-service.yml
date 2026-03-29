@@ -11,6 +11,10 @@ spring:
 jwt:
   secret: ${JWT_SECRET:VGhpc0lzQVNlY3VyZUJhc2U2NEVuY29kZWRTZWNyZXRLZXlGb3JKb2JQb3J0YWwyMDI2IQ==}
 
+app:
+  internal:
+    api-key: ${APP_INTERNAL_API_KEY:jobportal-internal-key}
+
 springdoc:
   swagger-ui:
     enabled: false
